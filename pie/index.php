@@ -79,7 +79,7 @@ $cakeDescription = "Highcharts Pie Chart";
         <script src="http://code.highcharts.com/modules/exporting.js"></script>
     </head>
     <body>
-        <a class="link_header" href="/">&lt;&lt; Back to index</a>
+        <a class="link_header" href="/highcharts/">&lt;&lt; Back to index</a>
         <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
     </body>
 </html>
