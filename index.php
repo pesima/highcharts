@@ -25,14 +25,21 @@ $cakeDescription = "Highcharts Chart PHP with MySQL Example";
                     <thead>
                         <tr>
                             <th>PIE CHARTS</th>                            
+                            <th>COLUMN AND BAR CHARTS</th>                            
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="pie/">Pie Chart</a></td>                          
+                            <td><a href="pie/pie-chart_1.php">Pie Chart  Example 1</a></td>                          
+                            <td><a href="bar/basic-colm.php">Basic Column</a></td>                          
                         </tr>                       
                         <tr>                          
-                            <td><a href="#">Column(coming)</a></td>                            
+                            <td><a href="pie/pie-semi-circle.php">Pie Semi Circle</a></td>
+                          <td><a href="bar/basic-bar.php">Basic Bar</a></td>                          
+                        </tr>                       
+                        <tr>                          
+                            <td><a href="pie/pie-semi-circle.php">Pie Chart Example 2</a></td>
+                            <td></td>
                         </tr>                       
                     </tbody>
                 </table>

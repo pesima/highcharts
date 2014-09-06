@@ -49,27 +49,9 @@ $cakeDescription = "Highcharts Pie Chart";
                         }
                     },
                     series: []
-                            //Bentuk data sebenar
-                            /*series: [{
-                             "type":"pie",
-                             "name":"Revenue",
-                             "data":[
-                             ["Direct Sales",20],
-                             ["Search Engine Marketing",15],
-                             ["PPC Advertising",15],
-                             ["Website Marketing",10],
-                             ["Blog Marketing",10],
-                             ["Social Media Marketing",10],
-                             ["Email Marketing",10],
-                             ["Online PR",2.5],
-                             ["Multimedia Marketing",2.5],
-                             ["Mobile Marketing",2.5],
-                             ["Display Advertising",2.5]
-                             ]
-                             }]*/
-                }
+                };
 
-                $.getJSON("data.php", function(json) {
+                $.getJSON("data/data-pie-chart.php", function(json) {
                     options.series = json;
                     chart = new Highcharts.Chart(options);
                 });
