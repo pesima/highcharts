@@ -18,6 +18,14 @@ $cakeDescription = "Highcharts Pie Chart";
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
+                //default
+                getAjaxData('2013');
+
+                $('#dynamic_data').change(function() {
+                    var id = $('#dynamic_data').val();
+                    getAjaxData(id);
+                });
+
                 var options = {
                     chart: {
                         renderTo: 'container',
@@ -65,23 +73,34 @@ $cakeDescription = "Highcharts Pie Chart";
                         y: 100,
                         floating: true,
                         borderWidth: 1,
-                        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
                         shadow: true
                     },
                     series: []
                 };
-                $.getJSON("data/data-basic-colm.php", function(json) {
-                    options.xAxis.categories = json[0]['data']; //xAxis: {categories: []}
-                    options.series[0] = json[1];
-                    chart = new Highcharts.Chart(options);
-                });
+                function getAjaxData(id) {
+                    $.getJSON("data/data-basic-colm-ajax.php", {id: id}, function(json) {
+                        options.xAxis.categories = json[0]['data']; //xAxis: {categories: []}
+                        options.series[0] = json[1];                        
+                        chart = new Highcharts.Chart(options);
+                    });
+                }
+
             });
         </script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        
     </head>
     <body>
         <a class="link_header" href="/highcharts/">&lt;&lt; Back to index</a>
-        <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+        <div class="menu_top" >
+            <select id="dynamic_data">
+                <option value="">Pilih</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+            </select>
+        </div>
+        <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto;"></div>
     </body>
 </html>

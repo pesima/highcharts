@@ -24,7 +24,7 @@ $cakeDescription = "Highcharts Pie Chart";
                         type: 'bar'
                     },
                     title: {
-                        text: 'Statistik Pelawat Urusan XYZ',
+                        text: 'Highcharts Chart PHP with MySQL Example',
                         x: -20 //center
                     },
                     subtitle: {

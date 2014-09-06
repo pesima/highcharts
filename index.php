@@ -25,7 +25,7 @@ $cakeDescription = "Highcharts Chart PHP with MySQL Example";
                     <thead>
                         <tr>
                             <th>PIE CHARTS</th>                            
-                            <th>COLUMN AND BAR CHARTS</th>                            
+                            <th>COLUMN, BAR AND LINE CHARTS</th>                            
                         </tr>
                     </thead>
                     <tbody>
@@ -34,12 +34,16 @@ $cakeDescription = "Highcharts Chart PHP with MySQL Example";
                             <td><a href="bar/basic-colm.php">Basic Column</a></td>                          
                         </tr>                       
                         <tr>                          
-                            <td><a href="pie/pie-semi-circle.php">Pie Semi Circle</a></td>
-                          <td><a href="bar/basic-bar.php">Basic Bar</a></td>                          
+                            <td><a href="pie/pie-chart_2.php">Pie Chart Example 2</a></td>
+                            <td><a href="bar/basic-bar.php">Basic Bar</a></td>                          
                         </tr>                       
                         <tr>                          
-                            <td><a href="pie/pie-semi-circle.php">Pie Chart Example 2</a></td>
-                            <td></td>
+                            <td><a href="pie/pie-semi-circle.php">Pie Semi Circle</a></td>
+                            <td><a href="bar/basic-colm-ajax.php">Basic Column AJAX</a></td>                          
+                        </tr>                       
+                        <tr>                          
+                            <td><a href="pie/pie-chart-3d.php">Pie Chart 3D</a></td>
+                            <td><a href="bar/basic-line.php">Basic Line</a></td>                          
                         </tr>                       
                     </tbody>
                 </table>

@@ -21,22 +21,25 @@ $cakeDescription = "Highcharts Pie Chart";
                 var options = {
                     chart: {
                         renderTo: 'container',
-                        type: 'column'
+                        type: 'line'
                     },
                     title: {
                         text: 'Highcharts Chart PHP with MySQL Example',
                         x: -20 //center
                     },
                     subtitle: {
-                        text: 'Sumber : Jabatan XYZ',
+                        text: 'Source: WorldClimate.com',
                         x: -20
                     },
                     xAxis: {
-                        categories: []
+                        categories: [],
+                        title: {
+                            text: 'Bulan'
+                        }
                     },
                     yAxis: {
                         title: {
-                            text: 'Jumlah Pelawat'
+                            text: 'Bilangan Pelawat'
                         },
                         plotLines: [{
                                 value: 0,
@@ -45,28 +48,13 @@ $cakeDescription = "Highcharts Pie Chart";
                             }]
                     },
                     tooltip: {
-                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                        pointFormat: '<span style="color:{point.color}">{point.name}</span>:<b>{point.y}</b> of total<br/>'
-                    },
-                    plotOptions: {
-                        series: {
-                            borderWidth: 0,
-                            dataLabels: {
-                                enabled: true,
-                                format: '{point.y}'
-                            }
-                        }
+                        valueSuffix: '°C'
                     },
                     legend: {
                         layout: 'vertical',
                         align: 'right',
-                        verticalAlign: 'top',
-                        x: -40,
-                        y: 100,
-                        floating: true,
-                        borderWidth: 1,
-                        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-                        shadow: true
+                        verticalAlign: 'middle',
+                        borderWidth: 0
                     },
                     series: []
                 };
