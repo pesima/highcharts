@@ -29,6 +29,12 @@ body {
 	font-size:90%;
 	margin: 0;
 }
+.link_header{
+    color: #ffffff;
+}
+a:hover.link_header{
+    color: #ededed;
+}
 a {
 	color: #003d4c;
 	text-decoration: underline;
