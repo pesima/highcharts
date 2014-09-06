@@ -10,7 +10,7 @@ Setup
  1. Create MySQL database:  **db_highcharts**
  2. Create Mysql table : **web_marketing**
  The SQL Script: load sql file [web_marketing.sql](https://github.com/pesima/highcharts/blob/master/db_highcharts.sql).
- 3. Copy  [highcharts project](https://github.com/pesima/highcharts/archive/master.zip). to your local webrot
+ 3. Copy  [highcharts project](https://github.com/pesima/highcharts/archive/master.zip). to your local webroot
  4. run http://localhost/highcharts
  
 Reference
