@@ -1,9 +1,9 @@
 Highcharts
 ==========
 
-Highcharts Chart PHP with MySQL Example
-Chart using Highcharts, PHP, JSON and MySQL.
-Demo : [http://highcharts-mzm.rhcloud.com/](http://highcharts-mzm.rhcloud.com/)
+* Highcharts Chart PHP with MySQL Example
+* Chart using Highcharts, PHP, JSON and MySQL.
+* Demo : [http://highcharts-mzm.rhcloud.com/](http://highcharts-mzm.rhcloud.com/)
 
 Setup
 =====
