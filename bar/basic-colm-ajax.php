@@ -3,6 +3,7 @@
  *
  *
  * @link          https://github.com/mzm-dev 
+ * @demo          http://highcharts-mzm.rhcloud.com
  * @created       September 2014
  * @fb            https://www.facebook.com/zakimedia
  * @email         mohdzaki04@gmail.com
