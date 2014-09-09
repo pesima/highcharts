@@ -12,7 +12,7 @@ Setup
 *   web_marketing
 *   activities
     
- The SQL Script: load sql file [web_marketing.sql](https://github.com/pesima/highcharts/blob/master/db_highcharts.sql).
+ The SQL Script: load sql file [db_highcharts.sql](https://github.com/pesima/highcharts/blob/master/db_highcharts.sql).
  3. Copy  [highcharts project](https://github.com/pesima/highcharts/archive/master.zip). to your local webroot
  4. run http://localhost/highcharts
  
